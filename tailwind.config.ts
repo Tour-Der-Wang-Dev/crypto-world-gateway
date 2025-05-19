@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,17 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+        // InfiWorld custom colors
+        infiworld: {
+          gold: '#D4AF37',
+          'gold-light': '#F1D78A',
+          'gold-dark': '#9E7E2D',
+          blue: '#0A2463',
+          'blue-dark': '#051230',
+          'blue-light': '#1D48AD',
+          'space-dark': '#05071F',
+        },
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +95,26 @@ export default {
 					to: {
 						height: '0'
 					}
-				}
+				},
+        'float': {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-10px)' },
+        },
+        'pulse-gold': {
+          '0%, 100%': { opacity: '1' },
+          '50%': { opacity: '0.7' },
+        },
+        'rotate-slow': {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        }
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+        'float': 'float 6s ease-in-out infinite',
+        'pulse-gold': 'pulse-gold 3s infinite',
+        'rotate-slow': 'rotate-slow 120s linear infinite',
 			}
 		}
 	},
