@@ -9,6 +9,7 @@ import Map from "./pages/Map";
 import Marketplace from "./pages/Marketplace";
 import Freelance from "./pages/Freelance";
 import Travel from "./pages/Travel";
+import Verification from "./pages/Verification";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -25,6 +26,7 @@ const App = () => (
           <Route path="/marketplace" element={<Marketplace />} />
           <Route path="/freelance" element={<Freelance />} />
           <Route path="/travel" element={<Travel />} />
+          <Route path="/verification" element={<Verification />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
